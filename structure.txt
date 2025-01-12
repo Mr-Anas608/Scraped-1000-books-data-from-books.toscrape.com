@@ -1,25 +1,32 @@
-class="product_pod" (main cont)
+# Scraper Data Structure Guide
+This document provides the structure of the HTML elements and classes used to scrape book data from `books.toscrape.com`.
 
-	class="image_container"
-		a => href (full page URL)
-			img => src (img URL)
-	
-	class="star-rating Two" (2nd word in class is the rating)
+---
 
+## Main Product Container
+class="product_pod" (main container)
 
-	h3
-		a => href (full page URL) and text inside is the title
-	
+  class="image_container"
+    a => href (full page URL)
+      img => src (image URL)
+  
+  class="star-rating Two" (The second word in the class represents the rating)
+  
+  h3
+    a => href (full page URL)  
+        (text inside contains the book title)
+  
+  class="price_color"
+    (text inside contains the price)
+  
+  class="instock availability"
+    (text inside indicates product availability)
 
-	class="price_color" => text inside is the price
+## Pagination
+class="next"
+  a => href (link to the next page)
 
-	class="instock availability" => text inside is the availabilty
+---
 
-	class="next"
-		a => href (link of next page)
-
-
-headings can be like
-
-"Book Title", "Img URL", "Price", "Rating", "Availability", "Product Page URL"
-
+## Example Column Headings
+"Book Title", "Image URL", "Price", "Rating", "Availability", "Product Page URL"
