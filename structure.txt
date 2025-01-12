@@ -1,0 +1,25 @@
+class="product_pod" (main cont)
+
+	class="image_container"
+		a => href (full page URL)
+			img => src (img URL)
+	
+	class="star-rating Two" (2nd word in class is the rating)
+
+
+	h3
+		a => href (full page URL) and text inside is the title
+	
+
+	class="price_color" => text inside is the price
+
+	class="instock availability" => text inside is the availabilty
+
+	class="next"
+		a => href (link of next page)
+
+
+headings can be like
+
+"Book Title", "Img URL", "Price", "Rating", "Availability", "Product Page URL"
+
